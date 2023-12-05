@@ -30,11 +30,9 @@ function Navbar() {
         }`}
       >
         <div className="container d-flex justify-content-between">
-          <a className="navbar-brand" href="#">
-            <Link href="/">
-              <Image src="/favicon.ico" alt="" width={50} height={50} />
-            </Link>
-          </a>
+          <Link href="/">
+            <Image src="/favicon.ico" alt="" width={50} height={50} />
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -51,7 +49,7 @@ function Navbar() {
             className={`collapse navbar-collapse text-center`}
             id="navbarNavDropdown"
           >
-            <ul className="navbar-nav ms-auto">
+            <ul className="navbar-nav ms-auto navlinks">
               <li className="nav-item">
                 <Link className="no-dec" href="/about">
                   About
