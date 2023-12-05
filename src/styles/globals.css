@@ -19,3 +19,7 @@ body {
   zoom: 1.05;
   height: 110vh !important;
 }
+
+.no-dec {
+  text-decoration: none;
+}
