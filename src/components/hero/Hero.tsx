@@ -10,7 +10,7 @@ function Hero() {
         <div className="col-md-8 bg-dark p-3 w-75 opacity-75">
           <h1 className="text-light">Hidden Healings</h1>
           <p className="text-light">
-            &ldquo;Inner stillness is the key to outer strength.&rdquo; –Jared
+            &ldquo;Inner stillness is the key to outer strength.&rdquo; – Jared
             Brock
           </p>
         </div>
