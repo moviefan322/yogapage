@@ -5,12 +5,18 @@ import dayGridPlugin from "@fullcalendar/daygrid";
 import googleCalendarPlugin from "@fullcalendar/google-calendar";
 
 const GoogleCalendar = () => {
+  const handleEventClick = (info: any) => {
+    // Prevent default behavior on event click
+    info.jsEvent.preventDefault();
+  };
+
   return (
     <FullCalendar
       plugins={[dayGridPlugin, googleCalendarPlugin]}
       initialView="dayGridMonth"
-      googleCalendarApiKey={process.env.GOOG_API}
-      eventSources={[{ googleCalendarId: process.env.GOOG_CAL }]}
+      eventClick={handleEventClick}
+      googleCalendarApiKey={process.env.NEXT_PUBLIC_GOOG_API}
+      eventSources={[{ googleCalendarId: process.env.NEXT_PUBLIC_GOOG_CAL }]}
     />
   );
 };
