@@ -14,6 +14,11 @@ const Calendar = () => {
       plugins={[dayGridPlugin, googleCalendarPlugin]}
       initialView="dayGridMonth"
       eventClick={handleEventClick}
+      headerToolbar={{
+        left: "", // Buttons on the left side of the toolbar
+        center: "title", // Title in the center of the toolbar
+        right: "prev,next", // Buttons on the right side of the toolbar
+      }}
       googleCalendarApiKey={process.env.NEXT_PUBLIC_GOOG_API}
       eventSources={[{ googleCalendarId: process.env.NEXT_PUBLIC_GOOG_CAL }]}
     />

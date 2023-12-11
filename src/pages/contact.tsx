@@ -2,7 +2,7 @@ import Calendar from "@/components/calendar/Calendar";
 
 const Contact = () => {
   return (
-    <div className="container d-flex justify-content-between">
+    <div className="container d-md-flex justify-content-between">
       <div className="col-md-3 pr-2">
         <div className="text-center mb-5">
           <h4 className="text-uppercase fw-bold text-primary">Contact</h4>
