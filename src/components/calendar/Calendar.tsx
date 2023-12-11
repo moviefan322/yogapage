@@ -1,36 +1,23 @@
-import React, { useRef, useEffect } from "react";
-import Calendar from "@fullcalendar/react";
+import React from "react";
+import FullCalendar from "@fullcalendar/react";
+import dayGridPlugin from "@fullcalendar/daygrid";
 import googleCalendarPlugin from "@fullcalendar/google-calendar";
 
-const MyCalendar = () => {
-    const calendarRef = useRef<any>(null);
-
-    useEffect(() => {
-      if (calendarRef.current) {
-        const calendarApi = calendarRef.current.getApi();
-
-        calendarApi.addPlugin(googleCalendarPlugin);
-        calendarApi.setOption("googleCalendarApiKey", "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");
-
-        calendarApi.addEventSource({
-          googleCalendarId: "swampermovie@group.calendar.google.com",
-          color: "blue", // Customize the color of events from this calendar
-          textColor: "white", // Customize the text color of events
-        });
-      }
-    }, []);
+const Calendar = () => {
+  const handleEventClick = (info: any) => {
+    // Prevent default behavior on event click
+    info.jsEvent.preventDefault();
+  };
 
   return (
-    <div>
-      <h1>Google Calendar Integration</h1>
-      <Calendar
-        ref={calendarRef}
-        plugins={[googleCalendarPlugin]}
-        initialView="dayGridMonth"
-        // Add other calendar options as needed
-      />
-    </div>
+    <FullCalendar
+      plugins={[dayGridPlugin, googleCalendarPlugin]}
+      initialView="dayGridMonth"
+      eventClick={handleEventClick}
+      googleCalendarApiKey={process.env.NEXT_PUBLIC_GOOG_API}
+      eventSources={[{ googleCalendarId: process.env.NEXT_PUBLIC_GOOG_CAL }]}
+    />
   );
 };
 
-export default MyCalendar;
+export default Calendar;
