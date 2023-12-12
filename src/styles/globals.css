@@ -77,6 +77,24 @@ body {
   width: 190px;
 }
 
+.imgcont6 {
+  background: #151515 url("/self-care.jpeg") no-repeat center center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 230px;
+  width: 190px;
+}
+
+.imgcont7 {
+  background: #151515 url("/gems.jpeg") no-repeat center center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 230px;
+  width: 190px;
+}
+
 .content {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -101,6 +119,5 @@ body {
 @media screen and (min-width: 768px) {
   .service {
     width: 50% !important;
-
   }
 }
