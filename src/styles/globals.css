@@ -5,6 +5,9 @@
 
 body {
   font-family: "kfont";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .spacer {
@@ -27,4 +30,70 @@ body {
 .navlinks li {
   padding-right: 2rem;
   padding-left: 2rem;
+}
+
+.imgcont1 {
+  background: #151515 url("/acupress.jpeg") no-repeat center center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 230px;
+  width: 190px;
+}
+
+.imgcont2 {
+  background: #151515 url("/cup.jpeg") no-repeat center center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 230px;
+  width: 190px;
+}
+
+.imgcont3 {
+  background: #151515 url("/motif.jpg") no-repeat center center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 230px;
+  width: 190px;
+}
+
+.imgcont4 {
+  background: #151515 url("/yoga.jpeg") no-repeat center center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 230px;
+  width: 190px;
+}
+
+.imgcont5 {
+  background: #151515 url("/consult.jpeg") no-repeat center center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 230px;
+  width: 190px;
+}
+
+.content {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 190px;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.booknow {
+  background-color: #151515;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin-right: 1rem;
+  height: 235px;
+  cursor: pointer;
 }
