@@ -80,7 +80,7 @@ body {
 .content {
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 190px;
+  width: 250px;
 }
 
 .container {
@@ -96,4 +96,11 @@ body {
   margin-right: 1rem;
   height: 235px;
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .service {
+    width: 50% !important;
+
+  }
 }

@@ -5,11 +5,11 @@ const services = () => {
   return (
     <div className="container">
       <h1 className="text-center">SERVICES</h1>
-      <div className="d-flex flex-column w-100">
-        <div className="d-flex align-items-center px-1 mx-1">
+      <div className="d-flex flex-column w-100 services align-items-center">
+        <div className="d-flex align-items-center px-1 mx-1 w-100 service">
           <div className="col-md-10 d-flex align-items-center border border-2 border-dark ps-1 bg-success">
             <div className="col-md-8">
-              <div className="content px-3">
+              <div className="content px-3 mx-auto">
                 <h2>Acupressure</h2>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -23,10 +23,10 @@ const services = () => {
             <button className="booknow bg-primary">Book Now</button>
           </div>
         </div>
-        <div className="d-flex align-items-center px-1 mx-1 w-100">
+        <div className="d-flex align-items-center px-1 mx-1 w-100 service">
           <div className="col-md-10 d-flex align-items-center border border-2 border-dark ps-1 bg-success">
             <div className="col-md-8">
-              <div className="content px-3">
+            <div className="content px-3 mx-auto">
                 <h2>Cupping</h2>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -41,10 +41,10 @@ const services = () => {
           </div>
         </div>
 
-        <div className="d-flex align-items-center px-1 mx-1 w-100">
+        <div className="d-flex align-items-center px-1 mx-1 w-100 service">
           <div className="col-md-10 d-flex align-items-center border border-2 border-dark ps-1 bg-success">
             <div className="col-md-8">
-              <div className="content px-3">
+            <div className="content px-3 mx-auto">
                 <h2>accu x cupping</h2>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -58,10 +58,10 @@ const services = () => {
             <button className="booknow bg-primary">Book Now</button>
           </div>
         </div>
-        <div className="d-flex align-items-center px-1 mx-1 w-100">
+        <div className="d-flex align-items-center px-1 mx-1 w-100 service">
           <div className="col-md-10 d-flex align-items-center border border-2 border-dark ps-1 bg-success">
             <div className="col-md-8">
-              <div className="content px-3">
+            <div className="content px-3 mx-auto">
                 <h2>Private yoga session</h2>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -75,10 +75,10 @@ const services = () => {
             <button className="booknow bg-primary">Book Now</button>
           </div>
         </div>
-        <div className="d-flex align-items-center px-1 mx-1 w-100">
+        <div className="d-flex align-items-center px-1 mx-1 w-100 service">
           <div className="col-md-10 d-flex align-items-center border border-2 border-dark ps-1 bg-success">
             <div className="col-md-8">
-              <div className="content px-3">
+            <div className="content px-3 mx-auto">
                 <h2>yoga/self acupressure consultation</h2>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
