@@ -13,7 +13,7 @@ const products = () => {
           <h2>Self-Care</h2>
         </div>
         <div className="d-flex flex-column text-center">
-          <Link href="/self-care">
+          <Link href="/jewels">
             <div className="col-md-4 border border-3 border-dark m-3 p-3 imgcont7"></div>
           </Link>
           <h2>Jewels/Gems</h2>
