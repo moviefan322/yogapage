@@ -1,8 +1,11 @@
 import React from "react";
+import { useAppDispatch } from "@/lib/hooks";
+import { addItem } from "@/features/cart/cartActions";
 import { Product } from "@/interface/interface";
 import Image from "next/image";
 
-const jewels = () => {
+const Jewels = () => {
+  const dispatch = useAppDispatch();
   const products: Product[] = [
     {
       id: 1,
@@ -35,6 +38,11 @@ const jewels = () => {
       price: 150,
     },
   ];
+
+  const handleAddItem = (product: Product) => {
+    dispatch(addItem(product));
+  };
+
   return (
     <div className="container">
       <div className="d-flex flex-column justify-content-center">
@@ -44,14 +52,21 @@ const jewels = () => {
             <div className="col-4" key={product.id}>
               <div className="card m-3 bg-success">
                 <div className="card-body d-flex flex-column justify-content-center m-3">
-                  <Image className="mx-auto mb-3"
+                  <Image
+                    className="mx-auto mb-3"
                     src="/gems.jpeg"
                     alt="gems"
                     width={100}
-                    height={100} />
+                    height={100}
+                  />
                   <h5 className="card-title text-center">{product.name}</h5>
                   <p className="card-text text-center">${product.price}</p>
-                  <button className='btn btn-sm btn-primary'>Add to Cart</button>
+                  <button
+                    className="btn btn-sm btn-primary"
+                    onClick={() => handleAddItem(product)}
+                  >
+                    Add to Cart
+                  </button>
                 </div>
               </div>
             </div>
@@ -62,4 +77,4 @@ const jewels = () => {
   );
 };
 
-export default jewels;
+export default Jewels;
